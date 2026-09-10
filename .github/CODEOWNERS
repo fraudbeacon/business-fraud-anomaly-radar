@@ -37,8 +37,8 @@
 
  # Data Analytics
 
- /data/ @YOUR-ORG/data-analytics\
- /analytics/ @YOUR-ORG/data-analytics
+ /data/ @fraudbeacon/data-analytics\
+ /analytics/ @fraudbeacon/data-analytics
 
  # Cybersecurity
 
@@ -57,7 +57,7 @@
 
  # Backend configuration that may have infrastructure implications
 
- /backend/Dockerfile @YOUR-ORG/devops\
+ /backend/Dockerfile @fraudbeacon/devops\
  /backend/pom.xml @fraudbeacon/backend @fraudbeacon/devops
 
  # Frontend dependency/configuration files
@@ -72,29 +72,5 @@
 
  # Security-sensitive project configuration
 
- /security/ @YOUR-ORG/cybersecurity
+ /security/ @fraudbeacon/cybersecurity
 
-````
-
-**Replace `YOUR-ORG` with your actual GitHub organization name.**
-
-### One change I'd recommend
-
-I **wouldn't make Cybersecurity the default owner of the entire repository**. That's why the example uses DevOps as the default and assigns specialized areas to the appropriate teams.
-
-Also, CODEOWNERS only makes sense when the corresponding directories exist. For example, if your analytics code isn't actually under `/data/` or `/analytics/`, change those paths to your real structure.
-
-A good eventual structure would be:
-
-```text
-project/
-├── frontend/          → Frontend
-├── backend/           → Backend
-├── analytics/         → Data Analytics
-├── security/          → Cybersecurity
-├── infrastructure/    → DevOps
-├── .github/           → DevOps
-├── README.md
-├── CONTRIBUTING.md
-└── .gitignore
-````
