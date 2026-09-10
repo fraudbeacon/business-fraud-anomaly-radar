@@ -1,27 +1,6 @@
-/frontend/ @fraudbeacon/frontend-team
-/backend/ @fraudbeacon/backend-team
-/.github/ @fraudbeacon/devops
-
-
- ### `CODEOWNERS`
-
- I'd put this at:
-
-```
-.github/CODEOWNERS
-```
-
- The exact team names in GitHub need to match your **organization's team slugs**. If your teams are literally named `devops`, `backend`, `frontend`, `cybersecurity`, and `data-analytics`, you can use:
-
- CODEOWNERS✓
-
 # CODEOWNERS
 
- #
-
  # Each rule assigns ownership/review responsibility for matching files.
-
- # Team names must match the GitHub organization team slugs.
 
  # Default owner for the repository
 
