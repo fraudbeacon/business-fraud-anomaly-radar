@@ -1,0 +1,100 @@
+/frontend/ @fraudbeacon/frontend-team
+/backend/ @fraudbeacon/backend-team
+/.github/ @fraudbeacon/devops
+
+
+ ### `CODEOWNERS`
+
+ I'd put this at:
+
+```
+.github/CODEOWNERS
+```
+
+ The exact team names in GitHub need to match your **organization's team slugs**. If your teams are literally named `devops`, `backend`, `frontend`, `cybersecurity`, and `data-analytics`, you can use:
+
+ CODEOWNERS✓
+
+# CODEOWNERS
+
+ #
+
+ # Each rule assigns ownership/review responsibility for matching files.
+
+ # Team names must match the GitHub organization team slugs.
+
+ # Default owner for the repository
+
+ - @fraudbeacon/devops
+
+ # Frontend — React / TypeScript
+
+ /frontend/ @fraudbeacon/frontend
+
+ # Backend — Java / Spring
+
+ /backend/ @fraudbeacon/backend
+
+ # Data Analytics
+
+ /data/ @YOUR-ORG/data-analytics\
+ /analytics/ @YOUR-ORG/data-analytics
+
+ # Cybersecurity
+
+ /security/ @fraudbeacon/cybersecurity\
+ /.github/dependabot.yml @fraudbeacon/cybersecurity
+
+ # DevOps / CI/CD / Infrastructure
+
+ /.github/ @fraudbeacon/devops\
+ /docker/ @fraudbeacon/devops\
+ /docker-compose.yml @fraudbeacon/devops\
+ /infra/ @fraudbeacon/devops\
+ /infrastructure/ @fraudbeacon/devops\
+ /k8s/ @fraudbeacon/devops\
+ /kubernetes/ @fraudbeacon/devops
+
+ # Backend configuration that may have infrastructure implications
+
+ /backend/Dockerfile @YOUR-ORG/devops\
+ /backend/pom.xml @fraudbeacon/backend @fraudbeacon/devops
+
+ # Frontend dependency/configuration files
+
+ /frontend/package.json @fraudbeacon/frontend\
+ /frontend/package-lock.json @fraudbeacon/frontend\
+ /frontend/tsconfig.json @fraudbeacon/frontend
+
+
+
+
+
+ # Security-sensitive project configuration
+
+ /security/ @YOUR-ORG/cybersecurity
+
+````
+
+**Replace `YOUR-ORG` with your actual GitHub organization name.**
+
+### One change I'd recommend
+
+I **wouldn't make Cybersecurity the default owner of the entire repository**. That's why the example uses DevOps as the default and assigns specialized areas to the appropriate teams.
+
+Also, CODEOWNERS only makes sense when the corresponding directories exist. For example, if your analytics code isn't actually under `/data/` or `/analytics/`, change those paths to your real structure.
+
+A good eventual structure would be:
+
+```text
+project/
+├── frontend/          → Frontend
+├── backend/           → Backend
+├── analytics/         → Data Analytics
+├── security/          → Cybersecurity
+├── infrastructure/    → DevOps
+├── .github/           → DevOps
+├── README.md
+├── CONTRIBUTING.md
+└── .gitignore
+````
