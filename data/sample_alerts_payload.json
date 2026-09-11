@@ -1,0 +1,41 @@
+[
+  {
+    "transaction_id": "TX-109975",
+    "employee_id": "EMP-001",
+    "amount": 695.13,
+    "risk_score": 86,
+    "severity": "CRITICAL",
+    "detector_type": "HYBRID",
+    "reasons": [
+      "Transaction processed during irregular off-hours (03:17)",
+      "Transaction amount ($695.13) is 17.5x higher than employee's historical median",
+      "Statistical outlier detected by Isolation Forest driven by: is off hours (+12.0\u03c3), amount to median ratio (+11.5\u03c3)"
+    ]
+  },
+  {
+    "transaction_id": "TX-109955",
+    "employee_id": "EMP-008",
+    "amount": 717.99,
+    "risk_score": 86,
+    "severity": "CRITICAL",
+    "detector_type": "HYBRID",
+    "reasons": [
+      "Transaction processed during irregular off-hours (04:26)",
+      "Transaction amount ($717.99) is 10.7x higher than employee's historical median",
+      "Statistical outlier detected by Isolation Forest driven by: is off hours (+12.0\u03c3), amount (+9.2\u03c3)"
+    ]
+  },
+  {
+    "transaction_id": "TX-109844",
+    "employee_id": "EMP-005",
+    "amount": 230.54,
+    "risk_score": 83,
+    "severity": "CRITICAL",
+    "detector_type": "HYBRID",
+    "reasons": [
+      "Excessive discount applied (85.0%), surpassing the 35.0% threshold",
+      "Transaction amount ($230.54) is 5.0x higher than employee's historical median",
+      "Statistical outlier detected by Isolation Forest driven by: discount deviation (+12.0\u03c3), discount percent (+11.3\u03c3)"
+    ]
+  }
+]
