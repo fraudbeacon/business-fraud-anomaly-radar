@@ -1,37 +1,50 @@
 # CODEOWNERS
-# Each rule assigns ownership/review responsibility for matching files.
 
-# Default owner for the repository
-* @emaowusu
+ # Each rule assigns ownership/review responsibility for matching files.
 
-# Frontend — React / TypeScript
-/frontend/ @karmas-turn
+ # Default owner for the repository
 
-# Backend — Java / Spring
-/backend/ @backend
+ - @fraudbeacon/devops
 
-# Data Analytics
-/data/ @data-analytics
-/analytics/ @data-analytics
+ # Frontend — React / TypeScript
 
-# Cybersecurity
-/security/ @cybersecurity
-/.github/dependabot.yml @cybersecurity
+ /frontend/ @fraudbeacon/frontend
 
-# DevOps / CI/CD / Infrastructure
-/.github/ @emaowusu
-/docker/ @emaowusu
-/docker-compose.yml @emaowusu
-/infra/ @emaowusu
-/infrastructure/ @emaowusu
-/k8s/ @emaowusu
-/kubernetes/ @emaowusu
+ # Backend — Java / Spring
 
-# Backend configuration that may have infrastructure implications
-/backend/Dockerfile @emaowusu
-/backend/pom.xml @backend @emaowusu
+ /backend/ @fraudbeacon/backend
 
-# Frontend dependency/configuration files
-/frontend/package.json @karmas-turn
-/frontend/package-lock.json @karmas-turn
-/frontend/tsconfig.json @karmas-turn
+ # Data Analytics
+
+ /data/ @fraudbeacon/data-analytics
+ /analytics/ @fraudbeacon/data-analytics
+
+ # Cybersecurity
+
+ /security/ @fraudbeacon/cybersecurity
+ /.github/dependabot.yml @fraudbeacon/cybersecurity
+
+ # DevOps / CI/CD / Infrastructure
+
+ /.github/ @fraudbeacon/devops
+ /docker-compose.yml @fraudbeacon/devops
+ /infra/ @fraudbeacon/devops
+ /k8s/ @fraudbeacon/devops
+
+ # Backend configuration that may have infrastructure implications
+
+ /backend/Dockerfile @fraudbeacon/devops
+ /backend/pom.xml @fraudbeacon/backend @fraudbeacon/devops
+
+ # Frontend dependency/configuration files
+
+ /frontend/package.json @fraudbeacon/frontend
+ /frontend/package-lock.json @fraudbeacon/frontend
+ /frontend/tsconfig.json @fraudbeacon/frontend
+ /frontend/Dockerfile @fraudbeacon/devops
+
+
+ # Security-sensitive project configuration
+
+ /security/ @fraudbeacon/cybersecurity
+
