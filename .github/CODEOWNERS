@@ -1,55 +1,37 @@
 # CODEOWNERS
+# Each rule assigns ownership/review responsibility for matching files.
 
- # Each rule assigns ownership/review responsibility for matching files.
+# Default owner for the repository
+* @fraudbeacon/emaowusu
 
- # Default owner for the repository
+# Frontend — React / TypeScript
+/frontend/ @fraudbeacon/karmas-turn
 
- - @fraudbeacon/emaowusu
+# Backend — Java / Spring
+/backend/ @fraudbeacon/backend
 
- # Frontend — React / TypeScript
+# Data Analytics
+/data/ @fraudbeacon/data-analytics
+/analytics/ @fraudbeacon/data-analytics
 
- /frontend/ @fraudbeacon/karmas-turn
+# Cybersecurity
+/security/ @fraudbeacon/cybersecurity
+/.github/dependabot.yml @fraudbeacon/cybersecurity
 
- # Backend — Java / Spring
+# DevOps / CI/CD / Infrastructure
+/.github/ @fraudbeacon/emaowusu
+/docker/ @fraudbeacon/emaowusu
+/docker-compose.yml @fraudbeacon/emaowusu
+/infra/ @fraudbeacon/emaowusu
+/infrastructure/ @fraudbeacon/emaowusu
+/k8s/ @fraudbeacon/emaowusu
+/kubernetes/ @fraudbeacon/emaowusu
 
- /backend/ @fraudbeacon/backend
+# Backend configuration that may have infrastructure implications
+/backend/Dockerfile @fraudbeacon/emaowusu
+/backend/pom.xml @fraudbeacon/backend @fraudbeacon/emaowusu
 
- # Data Analytics
-
- /data/ @fraudbeacon/data-analytics\
- /analytics/ @fraudbeacon/data-analytics
-
- # Cybersecurity
-
- /security/ @fraudbeacon/cybersecurity\
- /.github/dependabot.yml @fraudbeacon/cybersecurity
-
- # DevOps / CI/CD / Infrastructure
-
- /.github/ @fraudbeacon/emaowusu\
- /docker/ @fraudbeacon/emaowusu\
- /docker-compose.yml @fraudbeacon/emaowusu\
- /infra/ @fraudbeacon/emaowusu\
- /infrastructure/ @fraudbeacon/emaowusu\
- /k8s/ @fraudbeacon/emaowusu\
- /kubernetes/ @fraudbeacon/emaowusu
-
- # Backend configuration that may have infrastructure implications
-
- /backend/Dockerfile @fraudbeacon/emaowusu\
- /backend/pom.xml @fraudbeacon/backend @fraudbeacon/emaowusu
-
- # Frontend dependency/configuration files
-
- /frontend/package.json @fraudbeacon/karmas-turn\
- /frontend/package-lock.json @fraudbeacon/karmas-turn\
- /frontend/tsconfig.json @fraudbeacon/karmas-turn
-
-
-
-
-
- # Security-sensitive project configuration
-
- /security/ @fraudbeacon/cybersecurity
-
+# Frontend dependency/configuration files
+/frontend/package.json @fraudbeacon/karmas-turn
+/frontend/package-lock.json @fraudbeacon/karmas-turn
+/frontend/tsconfig.json @fraudbeacon/karmas-turn
