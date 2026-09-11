@@ -4,11 +4,11 @@
 
  # Default owner for the repository
 
- - @fraudbeacon/devops
+ - @fraudbeacon/emaowusu
 
  # Frontend — React / TypeScript
 
- /frontend/ @fraudbeacon/frontend
+ /frontend/ @fraudbeacon/karmas-turn
 
  # Backend — Java / Spring
 
@@ -26,24 +26,24 @@
 
  # DevOps / CI/CD / Infrastructure
 
- /.github/ @fraudbeacon/devops\
- /docker/ @fraudbeacon/devops\
- /docker-compose.yml @fraudbeacon/devops\
- /infra/ @fraudbeacon/devops\
- /infrastructure/ @fraudbeacon/devops\
- /k8s/ @fraudbeacon/devops\
- /kubernetes/ @fraudbeacon/devops
+ /.github/ @fraudbeacon/emaowusu\
+ /docker/ @fraudbeacon/emaowusu\
+ /docker-compose.yml @fraudbeacon/emaowusu\
+ /infra/ @fraudbeacon/emaowusu\
+ /infrastructure/ @fraudbeacon/emaowusu\
+ /k8s/ @fraudbeacon/emaowusu\
+ /kubernetes/ @fraudbeacon/emaowusu
 
  # Backend configuration that may have infrastructure implications
 
- /backend/Dockerfile @fraudbeacon/devops\
- /backend/pom.xml @fraudbeacon/backend @fraudbeacon/devops
+ /backend/Dockerfile @fraudbeacon/emaowusu\
+ /backend/pom.xml @fraudbeacon/backend @fraudbeacon/emaowusu
 
  # Frontend dependency/configuration files
 
- /frontend/package.json @fraudbeacon/frontend\
- /frontend/package-lock.json @fraudbeacon/frontend\
- /frontend/tsconfig.json @fraudbeacon/frontend
+ /frontend/package.json @fraudbeacon/karmas-turn\
+ /frontend/package-lock.json @fraudbeacon/karmas-turn\
+ /frontend/tsconfig.json @fraudbeacon/karmas-turn
 
 
 
