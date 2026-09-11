@@ -2,36 +2,36 @@
 # Each rule assigns ownership/review responsibility for matching files.
 
 # Default owner for the repository
-* @fraudbeacon/@emaowusu
+* @emaowusu
 
 # Frontend — React / TypeScript
-/frontend/ @fraudbeacon/@karmas-turn
+/frontend/ @karmas-turn
 
 # Backend — Java / Spring
-/backend/ @fraudbeacon/backend
+/backend/ @backend
 
 # Data Analytics
-/data/ @fraudbeacon/data-analytics
-/analytics/ @fraudbeacon/data-analytics
+/data/ @data-analytics
+/analytics/ @data-analytics
 
 # Cybersecurity
-/security/ @fraudbeacon/cybersecurity
-/.github/dependabot.yml @fraudbeacon/cybersecurity
+/security/ @cybersecurity
+/.github/dependabot.yml @cybersecurity
 
 # DevOps / CI/CD / Infrastructure
-/.github/ @fraudbeacon/@emaowusu
-/docker/ @fraudbeacon/@emaowusu
-/docker-compose.yml @fraudbeacon/@emaowusu
-/infra/ @fraudbeacon/@emaowusu
-/infrastructure/ @fraudbeacon/@emaowusu
-/k8s/ @fraudbeacon/@emaowusu
-/kubernetes/ @fraudbeacon/@emaowusu
+/.github/ @emaowusu
+/docker/ @emaowusu
+/docker-compose.yml @emaowusu
+/infra/ @emaowusu
+/infrastructure/ @emaowusu
+/k8s/ @emaowusu
+/kubernetes/ @emaowusu
 
 # Backend configuration that may have infrastructure implications
-/backend/Dockerfile @fraudbeacon/@emaowusu
-/backend/pom.xml @fraudbeacon/backend @fraudbeacon/@emaowusu
+/backend/Dockerfile @emaowusu
+/backend/pom.xml @backend @emaowusu
 
 # Frontend dependency/configuration files
-/frontend/package.json @fraudbeacon/karmas-turn
-/frontend/package-lock.json @fraudbeacon/@karmas-turn
-/frontend/tsconfig.json @fraudbeacon/@karmas-turn
+/frontend/package.json @karmas-turn
+/frontend/package-lock.json @karmas-turn
+/frontend/tsconfig.json @karmas-turn
