@@ -1,50 +1,35 @@
 # CODEOWNERS
+# Each rule assigns ownership/review responsibility for matching files.
 
- # Each rule assigns ownership/review responsibility for matching files.
+# Default owner for the repository
+* @fraudbeacon/devops
 
- # Default owner for the repository
+# Frontend — React / TypeScript
+/frontend/ @fraudbeacon/frontend
 
- - @fraudbeacon/devops
+# Backend — Java / Spring
+/backend/ @fraudbeacon/backend
 
- # Frontend — React / TypeScript
+# Data Analytics
+/data/ @fraudbeacon/data-analytics
+/analytics/ @fraudbeacon/data-analytics
 
- /frontend/ @fraudbeacon/frontend
+# Cybersecurity
+/security/ @fraudbeacon/cybersecurity
+/.github/dependabot.yml @fraudbeacon/cybersecurity
 
- # Backend — Java / Spring
+# DevOps / CI/CD / Infrastructure
+/.github/ @fraudbeacon/devops
+/docker-compose.yml @fraudbeacon/devops
+/infra/ @fraudbeacon/devops
+/k8s/ @fraudbeacon/devops
 
- /backend/ @fraudbeacon/backend
+# Backend configuration that may have infrastructure implications
+/backend/Dockerfile @fraudbeacon/devops
+/backend/pom.xml @fraudbeacon/backend @fraudbeacon/devops
 
- # Data Analytics
-
- /data/ @fraudbeacon/data-analytics
- /analytics/ @fraudbeacon/data-analytics
-
- # Cybersecurity
-
- /security/ @fraudbeacon/cybersecurity
- /.github/dependabot.yml @fraudbeacon/cybersecurity
-
- # DevOps / CI/CD / Infrastructure
-
- /.github/ @fraudbeacon/devops
- /docker-compose.yml @fraudbeacon/devops
- /infra/ @fraudbeacon/devops
- /k8s/ @fraudbeacon/devops
-
- # Backend configuration that may have infrastructure implications
-
- /backend/Dockerfile @fraudbeacon/devops
- /backend/pom.xml @fraudbeacon/backend @fraudbeacon/devops
-
- # Frontend dependency/configuration files
-
- /frontend/package.json @fraudbeacon/frontend
- /frontend/package-lock.json @fraudbeacon/frontend
- /frontend/tsconfig.json @fraudbeacon/frontend
- /frontend/Dockerfile @fraudbeacon/devops
-
-
- # Security-sensitive project configuration
-
- /security/ @fraudbeacon/cybersecurity
-
+# Frontend dependency/configuration files
+/frontend/package.json @fraudbeacon/frontend
+/frontend/package-lock.json @fraudbeacon/frontend
+/frontend/tsconfig.json @fraudbeacon/frontend
+/frontend/Dockerfile @fraudbeacon/devops
